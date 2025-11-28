@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bing Xu - Personal Homepage</title>
+
+<style>
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+        margin: 0;
+        background: #f6f7f9;
+        color: #1f2937;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 30px 20px;
+    }
+
+    header {
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 20px;
+        background: white;
+        border-radius: 14px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    header h1 {
+        margin: 0;
+        font-size: 2.2rem;
+    }
+
+    header p.subtitle {
+        margin: 10px 0 5px;
+        color: #4b5563;
+        font-size: 1rem;
+    }
+
+    .links a {
+        margin: 0 10px;
+        color: #2563eb;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .card {
+        background: white;
+        padding: 20px 24px;
+        margin-top: 20px;
+        border-radius: 14px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+
+    .card h2 {
+        margin-top: 0;
+        border-left: 4px solid #2563eb;
+        padding-left: 10px;
+        font-size: 1.35rem;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    footer {
+        text-align: center;
+        margin-top: 30px;
+        padding: 12px;
+        font-size: 0.85rem;
+        color: #6b7280;
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+
+    <!-- ================= Header ================= -->
+    <header>
+        <h1>Bing Xu</h1>
+        <p class="subtitle">Researcher in Geospatial AI, Remote Sensing, and Landslide Analysis</p>
+
+        <div class="links">
+            <a href="mailto:your_email@example.com">Email</a>
+            <a href="https://github.com/XUBIG" target="_blank">GitHub</a>
+            <a href="https://scholar.google.com/citations?user=Bor8MLEAAAAJ&hl=en" target="_blank">Google Scholar</a>
+        </div>
+    </header>
+
+    <!-- ================= About ================= -->
+    <section class="card">
+        <h2>About Me</h2>
+        <p>
+            I am a researcher working in the field of <strong>geospatial artificial intelligence</strong>,
+            <strong>remote sensing</strong>, and <strong>natural hazard analysis</strong>.
+            My work focuses on landslide detection, disaster information extraction from social media,
+            and multi-source geospatial data fusion for improving situational awareness.
+        </p>
+        <p>
+            I am particularly interested in integrating satellite imagery, environmental data, and
+            text-based information (e.g., tweets) to infer where and when landslides occur.
+        </p>
+    </section>
+
+    <!-- ================= Research ================= -->
+    <section class="card">
+        <h2>Research Interests</h2>
+        <ul>
+            <li>Landslide detection and mapping using optical & SAR imagery</li>
+            <li>Disaster information extraction from social media</li>
+            <li>Geospatial data fusion (DEM, rainfall, landcover, susceptibility)</li>
+            <li>Knowledge graphs and hypergraphs for natural hazards</li>
+            <li>Deep learning for GIScience</li>
+        </ul>
+    </section>
+
+    <!-- ================= Projects ================= -->
+    <section class="card">
+        <h2>Selected Projects</h2>
+        <ul>
+            <li><strong>Multi-source Satellite Landslide Detection</strong><br>
+                Combining Sentinel-1 SAR and Sentinel-2 optical imagery for robust landslide mapping.
+            </li>
+            <li><strong>Social Media–based Landslide Location Inference</strong><br>
+                Integrating tweets, DEM, rainfall, susceptibility maps to infer event location and time.
+            </li>
+            <li><strong>Landslide Knowledge Representation</strong><br>
+                Applying hypergraph theory to model complex mechanistic relationships.
+            </li>
+        </ul>
+    </section>
+
+    <!-- ================= Publications ================= -->
+    <section class="card">
+        <h2>Selected Publications</h2>
+
+        <p><strong>Landslide Identification Method Based on the FKGRNet Model for Remote Sensing Images</strong><br>
+        <em>Remote Sensing</em>, 2023.</p>
+
+        <p><strong>Landslide Knowledge Representation Based on Hypergraph Theory</strong><br>
+        <em>Transactions in GIS</em>, 2025.</p>
+
+        <p>Full publication list:  
+           <a href="https://scholar.google.com/citations?user=Bor8MLEAAAAJ&hl=en" target="_blank">Google Scholar Profile</a>
+        </p>
+    </section>
+
+    <!-- ================= Contact ================= -->
+    <section class="card">
+        <h2>Contact</h2>
+        <p>
+            <strong>Email:</strong> your_email@example.com<br>
+            <strong>GitHub:</strong> <a href="https://github.com/XUBIG" target="_blank">github.com/XUBIG</a><br>
+            <strong>Google Scholar:</strong>
+            <a href="https://scholar.google.com/citations?user=Bor8MLEAAAAJ&hl=en" target="_blank">
+                scholar.google.com
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        © <span id="year"></span> Bing Xu · All rights reserved.
+    </footer>
+
+</div>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
