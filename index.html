@@ -1,212 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Bing Xu</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Personal academic website of Bing Xu: geospatial AI, remote sensing, landslides, and disaster information analysis.">
-
-  <style>
-    /* overall layout: simple, single-column like fei0324.github.io */
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background: #ffffff;
-      color: #111827;
-      line-height: 1.6;
-    }
-    .page {
-      max-width: 760px;
-      margin: 32px auto 40px;
-      padding: 0 16px;
-    }
-    a {
-      color: #2563eb;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-
-    h1 {
-      font-size: 2.4rem;
-      margin-bottom: 0.4rem;
-    }
-    h2 {
-      font-size: 1.4rem;
-      margin-top: 2.2rem;
-      margin-bottom: 0.6rem;
-      border-bottom: 1px solid #e5e7eb;
-      padding-bottom: 0.2rem;
-    }
-    h3 {
-      font-size: 1.05rem;
-      margin-bottom: 0.2rem;
-    }
-    .subtitle {
-      font-size: 1rem;
-      color: #4b5563;
-      margin: 0.2rem 0;
-    }
-    .location {
-      font-size: 0.95rem;
-      color: #6b7280;
-      margin-bottom: 0.8rem;
-    }
-    .top-links {
-      margin: 0.5rem 0 1.5rem;
-      font-size: 0.95rem;
-    }
-    .top-links a {
-      margin-right: 1.2rem;
-    }
-    ul {
-      padding-left: 1.2rem;
-    }
-    .news-item, .pub-item, .exp-item {
-      margin-bottom: 0.5rem;
-    }
-    .pub-title {
-      font-weight: 600;
-    }
-    .pub-venue {
-      font-style: italic;
-      font-size: 0.95rem;
-    }
-    .year {
-      font-weight: 600;
-      margin-right: 0.5rem;
-    }
-    footer {
-      margin-top: 2.5rem;
-      font-size: 0.8rem;
-      color: #9ca3af;
-      text-align: left;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bing Xu</title>
+    <meta name="description" content="Researcher in Geospatial AI, Remote Sensing, and Landslide Analysis.">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="./assets/main.js" defer></script>
 </head>
-
 <body>
-<div class="page">
 
-  <!-- ===== Hero ===== -->
-  <h1>Bing is here!</h1>
-  <p class="subtitle">Researcher in Geospatial AI, Remote Sensing, and Landslide Analysis</p>
-  <p class="location">Currently based in Jena, Germany.</p>
+    <div class="site-wrapper fade-in">
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <div class="avatar-container">
+                    <img src="./assets/photo.jpg" alt="Bing Xu" class="avatar" onerror="this.src='https://ui-avatars.com/api/?name=Bing+Xu&background=f0f0f0&color=333&size=128'">
+                </div>
+                
+                <h1 class="greeting">hi, i’m bing!</h1>
+                <p class="tagline">Researcher in Geospatial AI, Remote Sensing, and Landslide Analysis.</p>
+                <p class="location">Currently based in Jena, Germany.</p>
+                
+                <nav class="quick-links">
+                    <a href="./assets/cv.pdf" target="_blank" class="link-item">cv <span class="meta">(2025)</span></a>
+                    <span class="divider">/</span>
+                    <a href="https://github.com/XUBIG" target="_blank" class="link-item">code</a>
+                    <span class="divider">/</span>
+                    <a href="https://scholar.google.com/citations?hl=en&user=Bor8MLEAAAAJ" target="_blank" class="link-item">scholar</a>
+                </nav>
 
-  <p class="top-links">
-    <a href="YOUR_CV_LINK_HERE" target="_blank">cv (last updated: 2025)</a>
-    <a href="https://github.com/XUBIG" target="_blank">some code</a>
-    <a href="https://scholar.google.com/citations?user=Bor8MLEAAAAJ&hl=en" target="_blank">google scholar</a>
-  </p>
+                <div class="travel-status">
+                    <div class="status-line">last stop: <span class="place">China</span></div>
+                    <div class="status-line">next: <span class="place">TBD</span></div>
+                </div>
 
-  <p>
-    last stop: China  
-    <br>
-    
-  </p>
+                <nav class="side-nav">
+                    <a href="#about">about</a>
+                    <a href="#news">news</a>
+                    <a href="#publications">publications</a>
+                    <a href="#projects">projects</a>
+                    <a href="#contact">contact</a>
+                </nav>
+            </div>
+        </aside>
 
-  <!-- ===== About ===== -->
-  <h2>about me</h2>
-  <p>
-    I am a researcher working at the intersection of <strong>geospatial data science</strong>,
-    <strong>remote sensing</strong>, and <strong>artificial intelligence</strong>. My work focuses on landslide
-    detection and monitoring, disaster information extraction from social media, and the fusion of
-    multi-source geospatial data (satellite imagery, DEM, rainfall, landcover, susceptibility maps)
-    to improve situational awareness during natural hazards.
-  </p>
-  <p>
-    Broadly, I am interested in how multi-modal data (text, images, and geospatial layers) can be combined
-    to infer <em>when</em> and <em>where</em> landslides occur and how their impacts evolve in space and time.
-  </p>
+        <main class="main-content">
+            
+            <section id="about">
+                <h2>about me</h2>
+                <p>I conduct research at the intersection of <strong>geospatial data science, remote sensing, and AI</strong>. My focus is on landslide detection, disaster information extraction from social media, and multi-source data fusion.</p>
+                <p>I am exploring how <strong>multi-modal data</strong> (text/images/geospatial layers) can be leveraged to infer the precise timing and location of landslides.</p>
+            </section>
 
-  <!-- ===== Education ===== -->
-  <h2>education</h2>
-  <p>
-    <span class="year">Ph.D.</span>Geography / GIScience (in progress)  
-    <br>
-    Focus: geospatial AI, landslide detection, disaster information analysis.
-  </p>
-  <p>
-    <span class="year">M.Sc. </span>Remote sensing / geography-related background / Hefei University of Tecnology, China
-  </p>
+            <section id="education">
+                <h2>education</h2>
+                <ul class="list-clean">
+                    <li class="list-item">
+                        <div class="item-header"><span class="title">Ph.D. Geography / GIScience</span><span class="date">In Progress</span></div>
+                        <div class="item-desc">Focus: geospatial AI, landslide detection.</div>
+                    </li>
+                    <li class="list-item">
+                        <div class="item-header"><span class="title">M.Sc. Remote Sensing</span><span class="date">Graduated</span></div>
+                        <div class="item-desc">Hefei University of Technology, China.</div>
+                    </li>
+                </ul>
+            </section>
 
-  <!-- ===== News ===== -->
-  <h2>news</h2>
-  <p class="news-item"><span class="year">2025</span>Working on integrating social media, remote sensing, and environmental data to infer landslide locations and times.</p>
-  <p class="news-item"><span class="year">2024</span>Published a paper on landslide knowledge representation using hypergraph theory (Transactions in GIS).</p>
-  <p class="news-item"><span class="year">2023</span>Published a landslide detection method based on the FKGRNet model (Remote Sensing).</p>
+            <section id="news">
+                <h2>news</h2>
+                <ul class="list-news">
+                    <li class="news-item"><span class="news-date">2025</span><span class="news-content">Integrating social media and environmental data for landslide inference.</span></li>
+                    <li class="news-item"><span class="news-date">2024</span><span class="news-content">Paper on landslide knowledge representation published in <em>Transactions in GIS</em>.</span></li>
+                </ul>
+            </section>
 
-  <!-- ===== Publications ===== -->
-  <h2>publications (selected)</h2>
+            <section id="publications">
+                <h2>selected publications</h2>
+                <div class="card-list">
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-title">Landslide Knowledge Representation Based on Hypergraph Theory</h3>
+                            <div class="card-meta">Chenghu Zhang, <strong>Bing Xu</strong>, et al. · <em>Transactions in GIS</em>, 2025</div>
+                            <div class="card-links"><a href="https://doi.org/10.1111/tgis.13276" target="_blank">DOI</a></div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                            <h3 class="card-title">Landslide Identification Method Based on the FKGRNet Model</h3>
+                            <div class="card-meta"><strong>Bing Xu</strong>, et al. · <em>Remote Sensing</em>, 2023</div>
+                            <div class="card-links"><a href="https://doi.org/10.3390/rs15133407" target="_blank">DOI</a></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="more-link">See more on <a href="#" target="_blank">Google Scholar</a>.</p>
+            </section>
 
-  <p class="pub-item">
-    <span class="pub-title">Landslide Identification Method Based on the FKGRNet Model for Remote Sensing Images.</span><br>
-    <span class="pub-venue">Remote Sensing, 2023.</span><br>
-    Bing Xu, et al.
-  </p>
+            <section id="projects">
+                <h2>projects</h2>
+                <ul class="list-clean">
+                    <li class="list-item">
+                        <div class="title">Social media–based landslide location inference</div>
+                        <div class="item-desc">Combining place names, tweets, and DEM to infer landslide dates.</div>
+                    </li>
+                    <li class="list-item">
+                        <div class="title">Multi-source satellite landslide detection</div>
+                        <div class="item-desc">Optical+SAR feature fusion and transfer learning.</div>
+                    </li>
+                </ul>
+            </section>
 
-  <p class="pub-item">
-    <span class="pub-title">Landslide Knowledge Representation Based on Hypergraph Theory.</span><br>
-    <span class="pub-venue">Transactions in GIS, 2025.</span><br>
-    Chenghu Zhang, Bing Xu, et al.
-  </p>
+            <section id="experience">
+                <h2>experience</h2>
+                <ul class="list-clean">
+                    <li class="list-item">
+                        <div class="title">Researcher in Geospatial AI</div>
+                        <div class="item-desc">Collaboration with GIScience groups in China and Germany.</div>
+                    </li>
+                </ul>
+            </section>
 
-  <p>
-    A complete and up-to-date list of publications is available on my
-    <a href="https://scholar.google.com/citations?user=Bor8MLEAAAAJ&hl=en" target="_blank">Google Scholar profile</a>.
-  </p>
+            <section id="teaching">
+                <h2>teaching</h2>
+                <p>Teaching assistantships and workshop mentoring experience.</p>
+            </section>
 
-  <!-- ===== Projects ===== -->
-  <h2>projects</h2>
-  <p class="pub-item">
-    <span class="pub-title">Social media–based landslide location inference.</span><br>
-    Inferring the most likely location and date of landslides reported on Twitter by combining
-    place names, tweet text, images, DEM, rainfall, and landslide susceptibility maps.
-  </p>
-  <p class="pub-item">
-    <span class="pub-title">Multi-source satellite landslide detection.</span><br>
-    Landslide mapping with optical and SAR imagery, focusing on feature fusion and transfer learning.
-  </p>
-  <p class="pub-item">
-    <span class="pub-title">Hypergraph-based representation of landslide mechanisms.</span><br>
-    Using hypergraphs to encode complex relationships among geotechnical and environmental factors.
-  </p>
+            <section id="contact">
+                <h2>contact</h2>
+                <ul class="link-list">
+                    <li>Email: <a href="mailto:bing.xu@uni-jena.de">bing.xu@uni-jena.de</a></li>
+                    <li>GitHub: <a href="https://github.com/XUBIG" target="_blank">@XUBIG</a></li>
+                </ul>
+            </section>
 
-  <!-- ===== Experience ===== -->
-  <h2>professional experience</h2>
-  <p class="exp-item">
-    Researcher in geospatial AI and landslide analysis, collaborating with GIScience groups and
-    remote sensing labs (China / Germany).
-  </p>
-  <p class="exp-item">
-    Previous experience on image recognition, P2P credit risk modeling, and multi-modal disaster data analysis.
-  </p>
-
-  <!-- ===== Teaching (optional, you can edit) ===== -->
-  <h2>teaching & mentoring</h2>
-  <p>You can list any teaching assistantships, mentoring experience, or workshops here.</p>
-
-  <!-- ===== Contact ===== -->
-  <h2>contact</h2>
-  <p>
-    The best way to reach me is by email. I am always happy to discuss collaborations on geospatial AI,
-    landslide detection, and disaster information analysis.
-  </p>
-  <p>
-    <strong>Email:</strong> <a href="mailto:bing.xu@uni-jena.de">bing.xu@uni-jena.de</a><br>
-    <strong>GitHub:</strong> <a href="https://github.com/XUBIG" target="_blank">github.com/XUBIG</a><br>
-    <strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=Bor8MLEAAAAJ&hl=en" target="_blank">scholar.google.com</a>
-  </p>
-
-  <footer>
-    © <span id="year"></span> Bing Xu · last updated 2025.
-  </footer>
-</div>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
+            <footer>
+                <p>&copy; Bing Xu · 2025.</p>
+            </footer>
+        </main>
+    </div>
 </body>
 </html>
