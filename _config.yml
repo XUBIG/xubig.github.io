@@ -6,13 +6,13 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Yi Ren (任意)"
-description              : "Focusing on video and speech large generation model."
-repository               : "rayeren/rayeren.github.io"
-google_scholar_stats_use_cdn : true
+title                    : "Bing Xu (徐兵)"
+description              : "Focusing on GeoAI and Nature Hazards."
+repository               : "XUBIG/bingxu.github.io"
+google_scholar_stats_use_cdn : false
 
 # google analytics
-google_analytics_id      : G-SWFCX99KQZ
+google_analytics_id      : Bor8MLEAAAAJ
 
 # SEO Related
 google_site_verification : b_BbOIt7d513ZXYDw-YRMicO6O5tthYiouqWDdWjGTU
@@ -21,15 +21,15 @@ baidu_site_verification  : code-ZxFK3f4pfb
 
 # Site Author
 author:
-  name             : "Yi Ren (任意)"
-  avatar           : "images/ry_profile.jpeg"
+  name             : "Bing Xu (徐兵)"
+  avatar           : "images/bx_profile.jpg"
   bio              : ""
-  location         : "Singapore"
-  employer         : "HeyGen"
+  location         : "Jena, Germany"
+  employer         : "University of Jena"
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=4FA6C0AAAAAJ"
-  email            : "rayeren613@gmail.com"
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  googlescholar    : "https://scholar.google.com/citations?user=Bor8MLEAAAAJ"
+  email            : "bing.xu@uni-jena.de"
+  researchgate     : #"https://www.researchgate.net/profile/Bing-Xu-67"
   uri              :
   bitbucket        :
   codepen          :
@@ -37,15 +37,15 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "RayeRen"
+  github           : "XUBIG"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "rayeren"
-  dblp             : "https://dblp.org/pid/75/6568-6.html"
-  orcid            : "https://orcid.org/0000-0002-9160-3848"
+  linkedin         : #"Bing Xu"
+  dblp             : #
+  orcid            : "https://orcid.org/0009-0001-9671-5478"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
